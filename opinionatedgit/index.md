@@ -27,7 +27,9 @@ Never user _GIT_, it is not an acronym?
 
 Do trunk based development - DORA says it is the best way to do.
 Integrate often. Only long-lived branches should be maintenance branches.
+
 Proactively deprecate maintenance branches that are no longer needed.
+
 Have shortlived feature branches - they should not live longer than a day.
 
 ## Do not make commits on master
