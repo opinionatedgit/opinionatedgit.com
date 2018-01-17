@@ -7,7 +7,7 @@ author: Johan Abildskov
 
 ## Should I rebase or merge?
 
-Also do rebases. It makes your history look prettier.
+Always do rebases. It makes your history look prettier.
 
 ## Should I use submodules for dependencies?
 
@@ -52,5 +52,5 @@ Isolate your work, preserve your master branches.
 
 ## Practice Continuous Integration
 
-Automate your quality criterias. Protect your master branch as that perfect
+Automate your quality criteria. Protect your master branch as that perfect
 truth it is.
