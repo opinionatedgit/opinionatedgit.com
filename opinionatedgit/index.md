@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: post
+author: Johan Abildskov
 ---
 
 # Opinionated Git
