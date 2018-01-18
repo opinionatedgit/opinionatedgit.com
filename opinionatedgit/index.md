@@ -58,3 +58,17 @@ Isolate your work, preserve your master branches.
 
 Automate your quality criteria. Protect your master branch as that perfect
 truth it is.
+
+## On commit messages
+
+Commit messages are important, and there are some many great examples of bad commit messsages.
+
+A commit message should concisely describe what is the consequence of applying a commit.
+
+In real life you will also be using a task management system, a commit should be done in context of a task, and such the task should be referenced from the commit.
+
+Take advantage of the fact that you have both a _subject_ and a _body_ to elaborate on your commit message. Put task references in the _body_.
+
+I expect you to make small commits, so I don't want to see a novel in the commit message. It is probably better suited either in a changelog, the documentation or inline in the code.
+
+Read [How to Write a Git Commit message](https://chris.beams.io/posts/git-commit/) by Chris Beams.
