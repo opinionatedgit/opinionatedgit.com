@@ -7,7 +7,11 @@ author: Johan Abildskov
 
 ## Should I rebase or merge?
 
+A very common question is _"Should I merge or should I rebase?"_.
 Always do rebases. It makes your history look prettier.
+
+For a more in-depth look at the difference between the two approaches
+please read [merge vs. rebase](http://edwardthomson.com/blog/merge_vs_rebase.html) by [Edward Thomson](https://twitter.com/ethomson).
 
 ## Should I use submodules for dependencies?
 
