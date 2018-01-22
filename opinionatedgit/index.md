@@ -17,6 +17,8 @@ please read [merge vs. rebase](http://edwardthomson.com/blog/merge_vs_rebase.htm
 
 No, use a proper dependency management tool!
 
+Also note that subtree and subrepo should be avoided.
+
 ## Monorepo or many-repos
 
 If you find yourself building specific tooling in order to accommodate a huge
