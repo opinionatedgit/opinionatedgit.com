@@ -40,9 +40,11 @@ Have shortlived feature branches - they should not live longer than a day.
 
 ## Do not make commits on master
 
-Isolate your changes to feature branches. Always assume you will be working on
-more than one thing at a time. Feature branches allows for easier switching of
-concepts
+When you are making a change to your code base, isolate your development on
+a separate branch. This allows for easier and safer experimentation.
+It also allows you to easily switch context, should you feel the need to
+investigate different versions of your code, or the pressure to switch context
+because something is burning.
 
 ## Only fast-forward merge the master branch
 
