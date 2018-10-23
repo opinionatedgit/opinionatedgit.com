@@ -5,7 +5,7 @@ author: Johan Abildskov
 
 # Opinionated Git
 
-## Should I rebase or merge?
+## Should I rebase or merge
 
 A very common question is _"Should I merge or should I rebase?"_.
 Always do rebases. It makes your history look prettier.
@@ -13,7 +13,7 @@ Always do rebases. It makes your history look prettier.
 For a more in-depth look at the difference between the two approaches
 please read [merge vs. rebase](http://edwardthomson.com/blog/merge_vs_rebase.html) by [Edward Thomson](https://twitter.com/ethomson).
 
-## Should I use submodules for dependencies?
+## Should I use submodules for dependencies
 
 No, use a proper dependency management tool!
 
@@ -24,10 +24,10 @@ Also note that subtree and subrepo should be avoided.
 If you find yourself building specific tooling in order to accommodate a huge
 repository, you should split up your repository.
 
-## How do I spell Git?
+## How do I spell Git
 
 Use Git for the tool, the community, the concept. use `git` for the cli tool.
-Never user _GIT_, it is not an acronym?
+Never user _GIT_, it is not an acronym!
 
 ## What is the recommended Git workflow
 
@@ -38,10 +38,14 @@ Proactively deprecate maintenance branches that are no longer needed.
 
 Have shortlived feature branches - they should not live longer than a day.
 
+There is no such thing as hotfix branches. Especially when we are doing something urgent, 
+we do not want to skip our pipeline and workflow. This is how production gets borked.
+
 ## Do not make commits on master
 
 When you are making a change to your code base, isolate your development on
 a separate branch. This allows for easier and safer experimentation.
+
 It also allows you to easily switch context, should you feel the need to
 investigate different versions of your code, or the pressure to switch context
 because something is burning.
