@@ -80,3 +80,19 @@ Take advantage of the fact that you have both a _subject_ and a _body_ to elabor
 I expect you to make small commits, so I don't want to see a novel in the commit message. It is probably better suited either in a changelog, the documentation or inline in the code.
 
 Read [How to Write a Git Commit message](https://chris.beams.io/posts/git-commit/) by Chris Beams.
+
+## On Graphical Tools
+
+I've often been a bit arrogant, and always have just said learn git in CLI, then you can cheat afterwards.
+I now feel very comfortable in the command line, but I think this is just me growing old and grumpy.
+
+In most IDEs there are excellent Git integrations. You should learn and use these. If you have a day to day need
+for a separate Git client your workflow is overly complex. Simplify it.
+
+The same goes for merge and diff tools. If you need external diff or merge tools, to me that is a workflow smell.
+
+There is an excellent Git integration in for example VSCode.
+
+That said I have worked together with people having great success with [p4merge](https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge), [meld merge](http://meldmerge.org/) and [kdiff](http://kdiff3.sourceforge.net/).
+
+Most conventional editors can be configured as a diff or merge tool.
