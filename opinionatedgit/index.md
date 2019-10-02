@@ -27,7 +27,7 @@ repository, you should split up your repository.
 ## How do I spell Git
 
 Use Git for the tool, the community, the concept. use `git` for the cli tool.
-Never used _GIT_, it is not an acronym!
+Never use _GIT_, it is not an acronym!
 
 ## What is the recommended Git workflow
 
