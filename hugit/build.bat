@@ -1,0 +1,1 @@
+docker run -it -v C:/Users/rando/repos/randomsort/opinionatedgit.com/hugit:/src -u hugo jguyomard/hugo-builder hugo

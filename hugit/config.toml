@@ -1,0 +1,10 @@
+baseURL = "http://opinionatedgit.com/"
+languageCode = "en-us"
+title = "Opinionated Git"
+theme = "hyde"
+
+[Menus]
+  main = [
+      {Name = "About", URL = "/about"},
+      
+  ]

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://opinionatedgit.com/about/</loc>
+    <lastmod>2020-03-23T11:30:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opinionatedgit.com/</loc>
+    <lastmod>2020-01-23T11:08:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opinionatedgit.com/posts/opinionatedgit/</loc>
+    <lastmod>2020-01-23T11:08:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opinionatedgit.com/posts/</loc>
+    <lastmod>2020-01-23T11:08:54+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opinionatedgit.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opinionatedgit.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Opinionated Git</title>
+    <link>http://opinionatedgit.com/posts/</link>
+    <description>Recent content in Posts on Opinionated Git</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jan 2020 11:08:54 +0000</lastBuildDate>
+    
+	<atom:link href="http://opinionatedgit.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Opinionatedgit</title>
+      <link>http://opinionatedgit.com/posts/opinionatedgit/</link>
+      <pubDate>Thu, 23 Jan 2020 11:08:54 +0000</pubDate>
+      
+      <guid>http://opinionatedgit.com/posts/opinionatedgit/</guid>
+      <description>Opinionated Git Should I rebase or merge A very common question is &amp;ldquo;Should I merge or should I rebase?&amp;rdquo;. Always do rebases. It makes your history look prettier.
+For a more in-depth look at the difference between the two approaches please read merge vs. rebase by Edward Thomson.
+Should I use submodules for dependencies No, use a proper dependency management tool!
+Also note that subtree and subrepo should be avoided.</description>
+    </item>
+    
+  </channel>
+</rss>

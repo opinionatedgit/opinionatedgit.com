@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.55.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Opinionatedgit &middot; Opinionated Git</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://opinionatedgit.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://opinionatedgit.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://opinionatedgit.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://opinionatedgit.com/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://opinionatedgit.com/"><h1>Opinionated Git</h1></a>
+      <p class="lead">
+      Opinons on how you should be using Git. By <a href='https://twitter.com/randomsort'> @randomsort </a>.
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://opinionatedgit.com/">Home</a> </li>
+        <li><a href="/about"> About </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2020. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Opinionatedgit</h1>
+  <time datetime=2020-01-23T11:08:54Z class="post-date">Thu, Jan 23, 2020</time>
+  
+
+<h1 id="opinionated-git">Opinionated Git</h1>
+
+<h2 id="should-i-rebase-or-merge">Should I rebase or merge</h2>
+
+<p>A very common question is <em>&ldquo;Should I merge or should I rebase?&rdquo;</em>.
+Always do rebases. It makes your history look prettier.</p>
+
+<p>For a more in-depth look at the difference between the two approaches
+please read <a href="http://edwardthomson.com/blog/merge_vs_rebase.html">merge vs. rebase</a> by <a href="https://twitter.com/ethomson">Edward Thomson</a>.</p>
+
+<h2 id="should-i-use-submodules-for-dependencies">Should I use submodules for dependencies</h2>
+
+<p>No, use a proper dependency management tool!</p>
+
+<p>Also note that subtree and subrepo should be avoided.</p>
+
+<h2 id="monorepo-or-many-repos">Monorepo or many-repos</h2>
+
+<p>If you find yourself building specific tooling in order to accommodate a huge
+repository, you should split up your repository.</p>
+
+<h2 id="how-do-i-spell-git">How do I spell Git</h2>
+
+<p>Use Git for the tool, the community, the concept. Use <code>git</code> for the cli tool.
+Never use <em>GIT</em>, it is not an acronym!</p>
+
+<h2 id="what-is-the-recommended-git-workflow">What is the recommended Git workflow</h2>
+
+<p>Do trunk based development - DORA says it is the best way to do.
+Integrate often. Only long-lived branches should be maintenance branches.</p>
+
+<p>Proactively deprecate maintenance branches that are no longer needed.</p>
+
+<p>Have shortlived feature branches - they should not live longer than a day.</p>
+
+<p>There is no such thing as hotfix branches. Especially when we are doing something urgent,
+we do not want to skip our pipeline and workflow. This is how production gets borked.</p>
+
+<h2 id="do-not-make-commits-on-master">Do not make commits on master</h2>
+
+<p>When you are making a change to your code base, isolate your development on
+a separate branch. This allows for easier and safer experimentation.</p>
+
+<p>It also allows you to easily switch context, should you feel the need to
+investigate different versions of your code, or the pressure to switch context
+because something is burning.</p>
+
+<h2 id="only-fast-forward-merge-the-master-branch">Only fast-forward merge the master branch</h2>
+
+<p>If you do not have any automate the correct workflow for getting changes to the
+master branch is:
+1. <code>git checkout feature/branchname</code>
+2. <code>git rebase master</code>
+3. Test everything!
+4. <code>git checkout master</code>
+5. <code>git merge feature/branchname</code></p>
+
+<p>Isolate your work, preserve your master branches.</p>
+
+<h2 id="practice-continuous-integration">Practice Continuous Integration</h2>
+
+<p>Automate your quality criteria. Protect your master branch as that perfect
+truth it is.</p>
+
+<h2 id="on-commit-messages">On commit messages</h2>
+
+<p>Commit messages are important, and there are some many great examples of bad commit messsages.</p>
+
+<p>A commit message should concisely describe what is the consequence of applying a commit.</p>
+
+<p>In real life you will also be using a task management system, a commit should be done in context of a task, and such the task should be referenced from the commit.</p>
+
+<p>Take advantage of the fact that you have both a <em>subject</em> and a <em>body</em> to elaborate on your commit message. Put task references in the <em>body</em>.</p>
+
+<p>I expect you to make small commits, so I don&rsquo;t want to see a novel in the commit message. It is probably better suited either in a changelog, the documentation or inline in the code.</p>
+
+<p>Read <a href="https://chris.beams.io/posts/git-commit/">How to Write a Git Commit message</a> by Chris Beams.</p>
+
+<h2 id="on-graphical-tools">On Graphical Tools</h2>
+
+<p>I&rsquo;ve often been a bit arrogant, and always have just said learn git in CLI, then you can cheat afterwards.
+I now feel very comfortable in the command line, but I think this is just me growing old and grumpy.</p>
+
+<p>In most IDEs there are excellent Git integrations. You should learn and use these. If you have a day to day need
+for a separate Git client your workflow is overly complex. Simplify it.</p>
+
+<p>The same goes for merge and diff tools. If you need external diff or merge tools, to me that is a workflow smell.</p>
+
+<p>There is an excellent Git integration in for example VSCode.</p>
+
+<p>That said I have worked together with people having great success with <a href="https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge">p4merge</a>, <a href="http://meldmerge.org/">meld merge</a> and <a href="http://kdiff3.sourceforge.net/">kdiff</a>.</p>
+
+<p>Most conventional editors can be configured as a diff or merge tool.</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
